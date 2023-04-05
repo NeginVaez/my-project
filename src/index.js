@@ -29,7 +29,7 @@ let city = document.querySelector("#input-search-city");
 function currentPositionTemp(position) {
   let lon = position.coords.longitude;
   let lat = position.coords.latitude;
-  let apiKeylocation = "57b2c40fdae71a6ba41d72685e3226e2";
+  let apiKeylocation = "003t332ed0o5bff6b090e30a0649afb0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKeylocation}&units=metric`;
   axios.get(apiUrl).then(showTemp);
 }
